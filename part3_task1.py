@@ -47,15 +47,15 @@ def has_hits(author_name):
     # our code goes here
     # get the author by name
     find_author = None # set a default value
-    for user in users:
+    for user in users: # if the user is in given list and list name is users
         if user['name'] == author_name:
             find_author = user
 
     # after finding the author
     if find_author:
         # check the articles of that author
-        for article in find_author["items"]:
-            if "reads" in article and article["reads"] > 1000:
+        for article in find_author["items"]: # items is the seconf list within users list
+            if "reads" in article and article["reads"] > 1000: # reads is the key in list
                 return True
     return False
 
