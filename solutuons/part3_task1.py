@@ -54,7 +54,7 @@ def has_hits(author_name):
     # after finding the author
     if find_author:
         # check the articles of that author
-        for article in find_author["items"]: # items is the seconf list within users list
+        for article in find_author["items"]: # items is the second list within users list
             if "reads" in article and article["reads"] > 1000: # reads is the key in list
                 return True
     return False
