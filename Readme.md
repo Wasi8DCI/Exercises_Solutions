@@ -53,8 +53,8 @@ users = [
 ~~~
 Using the concepts, and some code from the previous exercises, define a function named show_registration that checks if a user is registered to a specific module.
 
-> -** username**. String
-> -** password**. String
-> -** modulename**. String
+> - username. String
+> - password. String
+> - modulename. String
 
 
